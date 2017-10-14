@@ -1,3 +1,7 @@
+## Data files
 *.csv
 *.json
 *.xlsx
+
+## Checkpoints
+.ipynb_checkpoints
