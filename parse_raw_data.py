@@ -66,9 +66,11 @@ def calc_z_score(data_array):
     this might be a pd.Series instead. maybe
 
     data_array : np.ndarray
-    return : float
+    return : np.ndarray
     """
-    # do stuff
+    avg = data_array.mean()
+    std = data_array.std()
+    return (data_array - avg)/std
 
 def convert_major_to_major_category(major):
     """
