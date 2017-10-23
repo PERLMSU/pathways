@@ -78,6 +78,10 @@ def convert_major_to_major_category(major):
     major category (e.g., physics, non-stem) based on
     look up table.
 
+    The lookup table is assumed to be complete. It was created
+    from previous work by an undergraduate that identified all
+    majors.
+
     major : str
     return : str
     """
