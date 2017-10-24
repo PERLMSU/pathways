@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 data/
 __pycache__/
+=======
+## Data files
+>>>>>>> 10f0d8b2d667480d182e14d92718e53537205b53
 *.csv
 *.json
 *.xlsx
+
+## Checkpoints
+.ipynb_checkpoints
