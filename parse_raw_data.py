@@ -59,6 +59,22 @@ def current_term_index(current_term, first_term):
     semester_diff = ct_semester - ft_semester
     return year_diff + semester_diff
 
+def convert_grade_to_float(grade):
+    """
+    converts the provided string grade to a float
+    replaces non-numeric grades with nans
+    
+    grade : str
+    return : float
+    """
+    
+    try:
+        grade = np.float64(grade)
+    except ValueError:
+        grade = np.nan
+        
+    return grade        
+
 def calc_z_score(data_array):
     """
     calculates z score of an array of floats
@@ -451,3 +467,4 @@ if __name__=="__main__":
     # do all the functions on input files
     # write new columns to files
     # TODO: implement
+    pass
